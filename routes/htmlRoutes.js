@@ -20,8 +20,8 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/business", function(req, res) {
-    res.render("business")
+  app.get("/regist", function(req, res) {
+    res.render("regist")
   });
 
   app.get("/business/signin", function(req, res) {
