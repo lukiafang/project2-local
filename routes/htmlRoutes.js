@@ -29,10 +29,15 @@ module.exports = function(app) {
       res.render("signin") 
   });
 
+  app.get("/setevents", function(req, res) {
+    res.render("setevents")
+  });
+
   app.get("/contact", function(req, res) {
     res.render("contactus")
   })
 
+  
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
